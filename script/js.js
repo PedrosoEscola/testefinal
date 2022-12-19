@@ -1,9 +1,15 @@
 //----=Animation-----//
 $(document).ready(function () {
   $('#background').addClass('animar')
-  $('#cronometro, img').addClass('aparecer')
+  $('#cronometro, img, #seta-pato').addClass('aparecer')
   $('#principal').addClass('texto')
 })
+
+function local() {
+  $('#local').css('display', 'block')
+  $('#mapa').css('display', 'block')
+}
+setInterval(local, 2000)
 
 //-----Contador-----//
 function cronometro() {
